@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomurmularion con validacion JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="contenedor">
+    <h2>Registrar producto</h2>
+    <form id="formInventario">
+        <div class="grupo-input">
+            <label for="producto">Nombre producto</label>
+           <input type="text"id="producto"placeholder="Ej:teclado mecanico" id="producto">
+           <span class="mensaje-error" id="errorProducto"></span>
+        </div class="grupo-input">
+
+        <div>
+        <label for="cantidad">cantidad en stock</label>
+        <input type="number"id="cantidad"placeholder="Ej:10" id="cantidad">
+         <span class="mensaje-error" id="errorCantidad"></span>
+        </div>
+
+        <div class="grupo-input">
+        <label for="precio">precio unitario($)</label>
+        <input type="number"id="precio"placeholder="Ej:10" id="precio">
+         <span class="mensaje-error" id="errorPrecio"></span>
+        </div>
+
+        <button type="submit">Guardar</button>
+        <p id="mensajeExito" class="mensajeExito"></p>
+    </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
